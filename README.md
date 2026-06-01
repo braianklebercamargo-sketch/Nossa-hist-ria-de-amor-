@@ -62,9 +62,20 @@ Basta abrir esse arquivo e editar o que desejar:
 - `photos`: Substitua os links pelas fotos de vocês.
 - `spotifyPlaylistId`: Coloque o ID da playlist do Spotify de vocês.
 
-## 📦 Build para Produção
+## 📦 Build e Deploy na Vercel
 
-Para gerar a versão otimizada pronta para hospedagem (Vercel, Netlify, GitHub Pages, etc.):
+O projeto está configurado para ser feito o deploy rapidamente na Vercel e puxar as imagens românticas diretamente da API do Pexels.
+
+### Configurando o Pexels na Vercel:
+Para que as imagens apareçam corretamente no seu deploy da Vercel:
+1. Vá até o seu painel do projeto na Vercel e acesse **Settings** > **Environment Variables**.
+2. Adicione uma variável com o nome: `PEXELS_API_KEY`
+3. O valor deve ser a sua chave de API gerada no site do Pexels.
+4. Clique em **Save** e em seguida faça um novo deploy (vá em **Deployments** e clique em **Redeploy** no último).
+
+*Isso acontece porque foi criada uma função Serverless dedicada (`api/photos.js`) para garantir que sua chave não vaze.*
+
+Para gerar a versão otimizada pronta para hospedagem de outro local:
 
 ```bash
 npm run build

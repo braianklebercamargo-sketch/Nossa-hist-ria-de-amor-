@@ -37,7 +37,7 @@ export default function App() {
             ...prev,
             hero: {
               ...prev.hero,
-              mainPhoto: fetchedPhotos[0] || prev.hero.mainPhoto
+              mainPhoto: data.photos[0]?.src?.large2x || prev.hero.mainPhoto
             },
             photos: fetchedPhotos.slice(1, 11) // Pegar 10 fotos para a galeria
           }));
@@ -64,7 +64,7 @@ export default function App() {
   };
 
   return (
-    <div className="font-serif antialiased text-white selection:bg-pink-500/30 selection:text-white bg-[#110204] relative">
+    <div className="font-serif antialiased text-white selection:bg-pink-500/30 selection:text-white bg-[#110204] relative w-full overflow-x-hidden min-h-screen">
       <FloatingHearts />
       {error && (
         <div className="bg-red-500/90 text-white text-center py-2 px-4 z-50 fixed top-0 w-full font-sans text-sm font-medium">

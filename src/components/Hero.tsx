@@ -19,7 +19,7 @@ export function Hero({ onStart, heroConfig, couple }: HeroProps) {
   return (
     <section className="relative p-4 md:p-8">
       <HeroCursorTracker>
-        <div className="rounded-3xl overflow-hidden relative border border-white/10 group shadow-2xl flex flex-col items-center justify-center min-h-[85vh] py-20 px-4 w-full h-full">
+        <div className="rounded-3xl overflow-hidden relative border border-white/10 group shadow-2xl flex flex-col items-center justify-center min-h-[85vh] min-h-[85dvh] py-20 px-4 w-full h-full">
           {/* Background Image with Overlay */}
           <div className="absolute inset-0 z-0 overflow-hidden">
             <motion.img

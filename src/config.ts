@@ -8,7 +8,7 @@ export const CONFIG = {
   startDate: new Date(2022, 5, 12, 20, 0, 0),
   hero: {
     mainQuote: "Onde quer que você esteja, é lá que eu quero estar.",
-    mainPhoto: "https://placehold.co/1200x1600/3a0e18/fbcfe8?text=Foto+Principal\\n(Adicionar+API+Pexels)&font=Playfair+Display", 
+    mainPhoto: "/images/hero.svg", 
   },
   message: `Parece que foi ontem que nossos caminhos se cruzaram e o mundo ganhou cores novas. 
 
@@ -79,17 +79,16 @@ Eu te amo hoje, amanhã e para sempre. ❤️`,
   // Playlist romântica do Spotify (adicionar aqui o ID da playlist)
   spotifyPlaylistId: "3D5m7V870zgo92sQ9OAvLw", // Playlist escolhida pelo usuário
   photos: [
-    // Substitua os links abaixo pelas imagens que a API do Pexels retornar
-    "https://placehold.co/800x1200/2D0A11/fbcfe8?text=Momento+1\\n(Sua+API+Pexels)&font=Playfair+Display",
-    "https://placehold.co/800x900/1A0508/fbcfe8?text=Momento+2\\n(Sua+API+Pexels)&font=Playfair+Display",
-    "https://placehold.co/800x1100/3a0e18/fbcfe8?text=Momento+3\\n(Sua+API+Pexels)&font=Playfair+Display",
-    "https://placehold.co/800x1000/2D0A11/fbcfe8?text=Momento+4\\n(Sua+API+Pexels)&font=Playfair+Display",
-    "https://placehold.co/800x1200/1A0508/fbcfe8?text=Momento+5\\n(Sua+API+Pexels)&font=Playfair+Display",
-    "https://placehold.co/800x1000/3a0e18/fbcfe8?text=Momento+6\\n(Sua+API+Pexels)&font=Playfair+Display",
-    "https://placehold.co/800x1200/2D0A11/fbcfe8?text=Momento+7\\n(Sua+API+Pexels)&font=Playfair+Display",
-    "https://placehold.co/800x900/1A0508/fbcfe8?text=Momento+8\\n(Sua+API+Pexels)&font=Playfair+Display",
-    "https://placehold.co/800x1100/3a0e18/fbcfe8?text=Momento+9\\n(Sua+API+Pexels)&font=Playfair+Display",
-    "https://placehold.co/800x1000/2D0A11/fbcfe8?text=Momento+10\\n(Sua+API+Pexels)&font=Playfair+Display"
+    "/images/photo-1.svg",
+    "/images/photo-2.svg",
+    "/images/photo-3.svg",
+    "/images/photo-4.svg",
+    "/images/photo-5.svg",
+    "/images/photo-6.svg",
+    "/images/photo-7.svg",
+    "/images/photo-1.svg", // Reusing for the grid
+    "/images/photo-2.svg",
+    "/images/photo-3.svg"
   ]
 };
 

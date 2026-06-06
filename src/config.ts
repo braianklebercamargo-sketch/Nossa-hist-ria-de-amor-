@@ -8,7 +8,7 @@ export const CONFIG = {
   startDate: new Date(2022, 5, 12, 20, 0, 0),
   hero: {
     mainQuote: "Onde quer que você esteja, é lá que eu quero estar.",
-    mainPhoto: "/images/pexels-0.jpg", 
+    mainPhoto: "https://images.pexels.com/photos/13710512/pexels-photo-13710512.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", 
   },
   message: `Parece que foi ontem que nossos caminhos se cruzaram e o mundo ganhou cores novas. 
 
@@ -79,16 +79,16 @@ Eu te amo hoje, amanhã e para sempre. ❤️`,
   // Playlist romântica do Spotify (adicionar aqui o ID da playlist)
   spotifyPlaylistId: "3D5m7V870zgo92sQ9OAvLw", // Playlist escolhida pelo usuário
   photos: [
-    "/images/pexels-1.jpg",
-    "/images/pexels-2.jpg",
-    "/images/pexels-3.jpg",
-    "/images/pexels-4.jpg",
-    "/images/pexels-5.jpg",
-    "/images/pexels-6.jpg",
-    "/images/pexels-7.jpg",
-    "/images/pexels-8.jpg",
-    "/images/pexels-9.jpg",
-    "/images/pexels-10.jpg"
+    "https://images.pexels.com/photos/12509908/pexels-photo-12509908.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "https://images.pexels.com/photos/29643722/pexels-photo-29643722.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "https://images.pexels.com/photos/8602107/pexels-photo-8602107.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "https://images.pexels.com/photos/35907164/pexels-photo-35907164.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "https://images.pexels.com/photos/4545834/pexels-photo-4545834.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "https://images.pexels.com/photos/3692759/pexels-photo-3692759.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "https://images.pexels.com/photos/2346781/pexels-photo-2346781.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "https://images.pexels.com/photos/7243981/pexels-photo-7243981.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "https://images.pexels.com/photos/3907519/pexels-photo-3907519.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "https://images.pexels.com/photos/4148975/pexels-photo-4148975.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
   ]
 };
 

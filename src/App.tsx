@@ -18,40 +18,7 @@ import { ArrowLeft } from "lucide-react";
 export default function App() {
   const [showDemo, setShowDemo] = useState(false);
   const audioRef = useRef<AudioPlayerRef>(null);
-  const [config, setConfig] = useState(CONFIG);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    async function fetchPhotos() {
-      try {
-        const response = await fetch("/api/photos");
-        if (!response.ok) {
-          if (response.status === 401) {
-            setError("API Key do Pexels não configurada. Configure a chave nas configurações (Secrets).");
-          }
-          return;
-        }
-        
-        const data = await response.json();
-        if (data.photos && data.photos.length > 0) {
-          const fetchedPhotos = data.photos.map((p: any) => p.src.large);
-          
-          setConfig(prev => ({
-            ...prev,
-            hero: {
-              ...prev.hero,
-              mainPhoto: data.photos[0]?.src?.large2x || prev.hero.mainPhoto
-            },
-            photos: fetchedPhotos.slice(1, 11) // Pegar 10 fotos para a galeria
-          }));
-        }
-      } catch (err) {
-        console.error("Erro ao buscar fotos", err);
-      }
-    }
-    
-    fetchPhotos();
-  }, []);
+  const [config] = useState(CONFIG);
 
   const handleStart = () => {
     // Attempt to start audio
@@ -80,11 +47,6 @@ export default function App() {
             <span className="hidden sm:inline font-medium">Voltar à página inicial</span>
           </button>
           <FloatingHearts />
-          {error && (
-            <div className="bg-red-500/90 text-white text-center py-2 px-4 z-50 fixed top-0 w-full font-sans text-sm font-medium">
-              {error}
-            </div>
-          )}
           <div className="relative z-10">
             <Hero onStart={handleStart} heroConfig={config.hero} couple={config.couple} />
             <Counter startDate={config.startDate} />

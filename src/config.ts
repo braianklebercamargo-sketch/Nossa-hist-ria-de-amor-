@@ -8,7 +8,7 @@ export const CONFIG = {
   startDate: new Date(2022, 5, 12, 20, 0, 0),
   hero: {
     mainQuote: "Onde quer que você esteja, é lá que eu quero estar.",
-    mainPhoto: "/images/hero.svg", 
+    mainPhoto: "/images/pexels-0.jpg", 
   },
   message: `Parece que foi ontem que nossos caminhos se cruzaram e o mundo ganhou cores novas. 
 
@@ -79,16 +79,16 @@ Eu te amo hoje, amanhã e para sempre. ❤️`,
   // Playlist romântica do Spotify (adicionar aqui o ID da playlist)
   spotifyPlaylistId: "3D5m7V870zgo92sQ9OAvLw", // Playlist escolhida pelo usuário
   photos: [
-    "/images/photo-1.svg",
-    "/images/photo-2.svg",
-    "/images/photo-3.svg",
-    "/images/photo-4.svg",
-    "/images/photo-5.svg",
-    "/images/photo-6.svg",
-    "/images/photo-7.svg",
-    "/images/photo-1.svg", // Reusing for the grid
-    "/images/photo-2.svg",
-    "/images/photo-3.svg"
+    "/images/pexels-1.jpg",
+    "/images/pexels-2.jpg",
+    "/images/pexels-3.jpg",
+    "/images/pexels-4.jpg",
+    "/images/pexels-5.jpg",
+    "/images/pexels-6.jpg",
+    "/images/pexels-7.jpg",
+    "/images/pexels-8.jpg",
+    "/images/pexels-9.jpg",
+    "/images/pexels-10.jpg"
   ]
 };
 
